@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;800;900&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #2a2a2a;
+    --second-bg-color: #202020;
+    --text-color: #fff;
+    --second-color: #ccc;
+    --main-color: #05b4ff;
+    --big-font: 5rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(23, 37, 5);
+    padding: 22px 15%;
+    border-bottom: 1px solid transparenT;
+    transition: all .45s ease;
+}
+
+.logo {
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+span {
+    /* color: var(--main-color); */
+    color: rgb(248, 4, 126);
+}
+
+.navlist {
+    display: flex;
+    float: right;
+}
+
+.navlist a {
+    float: right;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 25px;
+    transition: all .45s ease;
+}
+
+.navlist a:hover {
+    color: var(--main-color);
+}
+
+.navlist a.active {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: var(--text-color);
+    z-index: 1000;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
+
+section {
+    padding: 160px 15% 120px;
+}
+
+.home {
+    width:100%;
+    height: 85vh;
+    background: url(https://www.sobeys.com/wp-content/uploads/2021/08/Sobeys_FallingforApples_1504-HERO-1260x350.jpg);
+    background-size:cover;
+    background-position:center;
+    
+}
+
+.slide {
+    margin-bottom: 20px;
+}
+
+.one {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 0 15px;
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: white;
+    color: black;
+}
+
+.two {
+    display: inline-block;
+    color: var(--second-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.home-text h1 {
+    font-size: var(--big-font);
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 1.1;
+    margin: 0 0 8px;
+
+}
+
+.home-text h3 {
+    color: var(--text-color);
+    margin: 0 0 35px;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.home-text p {
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.button {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn1 {
+    display: inline-block;
+    padding: 12px;
+    background: white;
+    border-radius: 5px;
+    color: black;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: all .45s ease;
+}
+.btn2 {
+    display: inline-block;
+    padding: 12px;
+    background: black;
+    border-radius: 5px;
+    color: var(--text-color);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: all .45s ease;
+}
+.btn:hover {
+    transform: scale(0.9);
+}
+.services1 {
+    background: white;
+
+}
+
+.services1 .main-text {
+    text-align: center;
+}
+
+.services1 .main-text p {
+    color: black;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.services1 .services1-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+
+.services1 .services1-content .box {
+    background: white;
+    padding: 35px 45px;
+    border-radius: 8px;
+    transition: all .45s ease;
+}
+
+.services1 .services1-content .box .s-icons i {
+    font-size: 32px;
+    margin-bottom: 20px;
+
+}
+.services1 .services1-content .box h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 15px;
+}
+.services1 .services1-content .box p {
+    color: black;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+.services1 .services1-content .box .btn3 {
+    display: inline-block;
+    padding: 12px;
+    background:rgba(68, 121, 32, 0.692);
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: all .45s ease;
+}
+.services1 .services1-content .box:hover {
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+
+.row:hover img {
+    transform: scale(1.1);
+
+}
+
+.row:hover .layer {
+    height: 100%;
+}
+.services2 {
+    background:black;
+
+}
+.services2 .sec3 .box4 {
+    background:black;
+    padding: 35px 45px;
+    border-radius: 8px;
+    transition: all .45s ease;
+}
+.services2 .sec3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+.services2 .sec3 .box4 .btn4 {
+    display: inline-block;
+    padding: 12px;
+    background:rgba(68, 121, 32, 0.692);
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: all .45s ease;
+}
+.services2 .sec3 .box4 .button2 {
+    display: inline-block;
+    padding: 10px;
+    background:rgb(27, 27, 26);
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: all .45s ease;
+}
+.contact {
+    background: var(--second-bg-color);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+.contact .sec4 .box10 {
+    background:var(--second-bg-color);
+    padding: 35px 45px;
+    border-radius: 8px;
+    transition: all .45s ease;
+}
+.contact .sec4 {
+    display:flex;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+.contact .sec4 .box10 ul li a {
+    color: #fff;
+}
+@media (max-width: 1480px) {
+    header {
+        padding: 12px 2.5%;
+        transition: .1s;
+    }
+
+    section {
+        padding: 110px 3% 60px;
+    }
+
+    .end {
+        padding: 15px 3%;
+    }
+}
+@media (max-width: 1100px){
+    :root{
+        --big-font:4rem;
+        --h2-font:2.5rem;
+        --p-font:1rem;
+        transition: .1s;
+    }
+    .home-text h3{
+        font-size: 2.5rem;
+    }
+    .home{
+        height: 87vh;
+    }
+}
+@media (max-width:920){
+    .about{
+        grid-template-columns: 1fr;
+
+    }
+    .about-img img{
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+    .contact{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 480px){
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: -1000px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg-color);
+        text-align: left;
+        transition: all .45s ease;
+
+    }
+    .navlist a{
+        display: block;
+        margin: 17px;
+        font-size: 20px;
+        transition: all .45s ease;
+        color: var(--text-color);
+
+    }
+    .navlist a:hover{
+        color: var(--main-color);
+    }
+    navlist a.active{
+        color: var(--text-color);
+    }
+    .navlist.open{
+        top: 100%;
+    }
+}
